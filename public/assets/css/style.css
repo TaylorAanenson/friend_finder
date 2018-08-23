@@ -1,0 +1,18 @@
+body {
+    background-image: url(../imgs/bananas.png);
+}
+.container {
+    background-color: rgba(249, 226, 166, 0.7);
+    margin-top: 2%;
+    border-radius: 40px;
+}
+form, .form-row, .form-group {
+    padding: 1rem;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.btn {
+    background-color: rgba(191, 232, 227, 1);
+    border: 0;
+}
