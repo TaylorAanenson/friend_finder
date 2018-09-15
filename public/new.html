@@ -5,88 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Friend Finder</title>
 </head>
-<body>
-    <div class="container">
+<body id="new-body">
+<div class="container">
     <div class="text-center">
     <h1>Friend Matcher</h1>
 
-    <a href="/">Friends</a> |
-    <a href="/friends">Friends API</a> |
-    <a href="/friends/new">Add a new friend</a>
+    <a href="/">Matches</a> |
+    <a href="/friends">API</a> |
+    <a href="/friends/new">Find a friend</a>
     </div>
     <form method="POST" action="/friends/create">
         <div class="form-row">
             <div class="col">
-                <input type="text" name="first" class="form-control" placeholder="First name">
+                <input type="text" name="first" class="form-control" placeholder="First name" required>
             </div>
             <div class="col">
-                <input type="text" name="last" class="form-control" placeholder="Last name">
+                <input type="text" name="last" class="form-control" placeholder="Last name" required>
             </div>
             </div>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select name="question-1" class="form-control" id="exampleFormControlSelect1">
-            <option value="5">5 (Agree)</option>
-            <option value="4">4</option>
-            <option value="3">3</option>
-            <option value="2">2</option>
-            <option value="1">1 (Disagree)</option>
+            <label for="exampleFormControlSelect1"><h4>Do you love dogs?</h4></label>
+            <select name="q1" class="form-control" id="exampleFormControlSelect2">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
             </select>
         </div>
         <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select name="question-2" class="form-control" id="exampleFormControlSelect1">
-                <option value="5">5 (Agree)</option>
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-                <option value="1">1 (Disagree)</option>
-                </select>
-            </div>
+            <label for="exampleFormControlSelect1"><h4>Or do you love cats?</h4></label>
+            <select name="q2" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Growing up were your parents very strict?</h4></label>
+            <select name="q3" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Do you wake up with energy?</h4></label>
+            <select name="q4" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Or do you get energy when the sun goes down?</h4></label>
+            <select name="q5" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Do you enjoy being a developer?</h4></label>
+            <select name="q6" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Or do you find it frustrating?</h4></label>
+            <select name="q7" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Or do you not know anything about coding?</h4></label>
+            <select name="q8" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Did you enjoy playing video games when you were younger?</h4></label>
+            <select name="q9" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Or did you enjoy playing sports?</h4></label>
+            <select name="q10" class="form-control" id="exampleFormControlSelect1">
+            <option value="5">5 (Strongly Agree)</option>
+            <option value="4">4 (Slightly Agree)</option>
+            <option value="3">3 (Neutral, Not Sure, or Don't Care)</option>
+            <option value="2">2 (Slightly Disagree)</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
         <button type="submit" class="btn btn-success btn-block">Submit</button>
     </form>
-    
-    <!-- <form  method="POST" action="/friends/create">
-        <input type="text" name="friend" placeholder="Please enter your name">
-        <br>
-        Agree <span>-----------</span> Disagree
-        <br>
-        <input type="radio" name="question-1" value="1" id="">5
-        <input type="radio" name="question-1" value="2" id="">4
-        <input type="radio" name="question-1" value="3" id="">3
-        <input type="radio" name="question-1" value="4" id="">2
-        <input type="radio" name="question-1" value="5" id="">1
-        <br>
-        <input type="radio" name="question-2" value="1" id="">5
-        <input type="radio" name="question-2" value="2" id="">4
-        <input type="radio" name="question-2" value="3" id="">3
-        <input type="radio" name="question-2" value="4" id="">2
-        <input type="radio" name="question-2" value="5" id="">1
-        <br>
-        <input type="radio" name="question-3" value="1" id="">5
-        <input type="radio" name="question-3" value="2" id="">4
-        <input type="radio" name="question-3" value="3" id="">3
-        <input type="radio" name="question-3" value="4" id="">2
-        <input type="radio" name="question-3" value="5" id="">1
-        <br>
-        <input type="radio" name="question-4" value="1" id="">5
-        <input type="radio" name="question-4" value="2" id="">4
-        <input type="radio" name="question-4" value="3" id="">3
-        <input type="radio" name="question-4" value="4" id="">2
-        <input type="radio" name="question-4" value="5" id="">1
-        <br>
-        <input type="radio" name="question-5" value="1" id="">5
-        <input type="radio" name="question-5" value="2" id="">4
-        <input type="radio" name="question-5" value="3" id="">3
-        <input type="radio" name="question-5" value="4" id="">2
-        <input type="radio" name="question-5" value="5" id="">1
-        <br>
-        <input type="submit" value="submit">
-    </form> -->
-    </div>
+</div>
     
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>

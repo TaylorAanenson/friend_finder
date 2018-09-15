@@ -1,10 +1,26 @@
 body {
-    background-image: url(../imgs/bananas.png);
+    background-image: url(../images/bananas.png);
+    overflow: hidden;
+}
+#new-body {
+    overflow: auto;
 }
 .container {
     background-color: rgba(249, 226, 166, 0.7);
     margin-top: 2%;
-    border-radius: 40px;
+    margin-bottom: 2%;
+    border-radius: 2rem;
+}
+.card {
+    /* height: fit-content; */
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.row {
+    margin-top: 1rem;
+}
+#matches, #users {
+    text-align: center;
 }
 form, .form-row, .form-group {
     padding: 1rem;
@@ -15,4 +31,20 @@ form, .form-row, .form-group {
 .btn {
     background-color: rgba(191, 232, 227, 1);
     border: 0;
+}
+@media (max-width: 767px){
+    body {
+        overflow: auto;
+    }
+    .card {
+        height: fit-content;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 575px){
+    .container {
+        width: 90%;
+    }
 }

@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Friend Finder</title>
 </head>
 <body>
 
-    <h1>Friends</h1>
+<div class="container">
+    <div class="text-center">
 
-    <a href="/">Friends</a> |
-    <a href="/friends">Friends API</a> |
-    <a href="/friends/new">Add a new friend</a>
-    
-    <!-- <form  method="POST" action="/create">
-        <input type="radio" name="question-1" id="">1
-        <input type="radio" name="question-1" id="">2
-        <input type="radio" name="question-1" id="">3
-        <input type="radio" name="question-1" id="">4
-        <input type="radio" name="question-1" id="">5
-        <input type="submit" value="">
-    </form> -->
+    <h1>Friend Matcher</h1>
 
-    <!-- <form  method="POST" action="/create">
-        <input type="text" name="friend" id="">
-        <input type="submit" value="">submit
-    </form> -->
-    
+    <a href="/">Matches</a> |
+    <a href="/friends">API</a> |
+    <a href="/friends/new">Find a friend</a>
+
+    </div>
+
+    <div class="row">
+
+    <div class="card text-white text-center bg-success">
+        <h2 class="card-header">Matches</h2>
+        <div class="card-body" id="matches"></div>
+    </div>
+
+    <div class="card text-white text-center bg-info">
+        <h2 class="card-header">Users</h2>
+        <div class="card-body" id="users"></div>
+    </div>
+
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/assets/javascript/jax.js"></script>
