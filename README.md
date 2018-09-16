@@ -1,3 +1,10 @@
-# Friend Matching Web Application
+## Friend Matching Web Application
 
-<img src="public/assets/images/friend-finder.gif"/>
+# The Home Page
+<img src="public/assets/images/home-page.gif"/>
+
+# Friend Matching
+<img src="public/assets/images/friend-matching.gif"/>
+
+# The API
+<img src="public/assets/images/api.gif"/>
